@@ -154,7 +154,6 @@ function AppBarMenu() {
                 <Toolbar sx={{ height: '100%' }} disableGutters>
                     <Box
                         variant="h6"
-                        noWrap
                         component="a"
                         className={styles.logo_container}
                     >
@@ -193,8 +192,8 @@ function AppBarMenu() {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page.page} onClick={() => handleNavigate(page.to)}>
+                            {pages.map((page, index) => (
+                                <MenuItem key={index} onClick={() => handleNavigate(page.to)}>
                                     <ButtonNavigateResponsive href={page.to} textAlign="center">{page.page}</ButtonNavigateResponsive>
                                 </MenuItem>
                             ))}
@@ -202,7 +201,6 @@ function AppBarMenu() {
                     </Box>
                     <Typography
                         variant="h5"
-                        noWrap
                         component="a"
                         href="#app-bar-with-responsive-menu"
                         sx={{
@@ -250,10 +248,10 @@ function AppBarMenu() {
                         </Box>
                     </Typography>
                     <StyledBox sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => {
+                        {pages.map((page, index) => {
                             return (
                                 <ButtonNavigate
-                                    key={page.page}
+                                    key={index}
                                     onClick={() => handleNavigate(page.to)}
                                     href={page.to}
                                     style={{ display: page.page === 'Apresente sua empresa' ? 'none' : 'block', }}
