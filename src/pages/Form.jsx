@@ -156,6 +156,7 @@ const Formulario = () => {
                   maxLength: 11,
                 })}
                 placeholder={t('formPhonePlaceholder')}
+                inputProps={{ maxLength: 11 }}
               />
             </InputLabel>
             {errors.telefone && <FieldRequired>{t('fieldRequired')}</FieldRequired>}
