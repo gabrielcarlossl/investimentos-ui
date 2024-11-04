@@ -38,6 +38,7 @@
     "formSentMessage": "Formulário enviado!",
     "formSentSubTitle": "Obrigado pelo seu interesse.",
     "formSentText": "Nós recebemos  seu formulário e entreremos em contato em breve.",
-    "formImageAlt": "Image of a successfully sent email"
+    "formImageAlt": "Image of a successfully sent email",
+    "fieldRequired": "* Campo obrigatório"
   }
 }

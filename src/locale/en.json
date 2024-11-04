@@ -37,6 +37,7 @@
     "aboutUsText": "Invest is a Brazilian company with extensive experience in the banking, corporate, technology, and venture capital sectors. We use artificial intelligence to identify the best investment opportunities in the market, both in Brazil and internationally. <br> Our mission is to provide innovative solutions and effective strategies in individual and corporate consulting and financial guidance, always committed to excellence and transparency.",
     "formSentMessage": "Form sent!",
     "formSentSubTitle": "Thank you for your interest.",
-    "formSentText": "We have received your form and will get in touch soon."
+    "formSentText": "We have received your form and will get in touch soon.",
+    "fieldRequired": "* Field required"
   }
 }
