@@ -1,8 +1,8 @@
 import { Box, Input } from '@mui/material';
 import { styled } from '@mui/system';
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 
 const Section = styled('section')({
   alignItems: 'center',
@@ -62,6 +62,7 @@ const InputLabelFile = styled('label')({
 const InputContainer = styled('div')({
   padding: '18px 12px 0px',
   display: 'flex',
+  flexDirection: 'column',
   'input': {
     color: '#011826',
     fontWeight: 500,
@@ -100,6 +101,10 @@ const Form = styled('form')({
   borderRadius: '16px',
   padding: '20px',
 });
+const FieldRequired = styled('span')({
+  fontSize: '12px',
+  color: '#ff8d8d'
+});
 const SendButton = styled('button')({
   marginTop: '18px',
   padding: '10px 18px',
@@ -115,83 +120,56 @@ const SendButton = styled('button')({
   }
 });
 
-
 const Formulario = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
-  const [formValues, setFormValues] = useState({
-    empresaNome: '',
-    cpf: '',
-    nomeCompleto: '',
-    telefone: '',
-    email: '',
-  });
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({
-      ...formValues,
-      [name]: value,
-    });
-  };
-
-  const submitHandler = () => {
+  const onSubmit = (data) => {
+    console.log(data);
     navigate('/success');
   };
-
-  const { t } = useTranslation()
 
   return (
     <Section>
       <h1>{t('urlJoinUs')}</h1>
       <h2>{t('formDescription')}</h2>
       <FormContainer>
-        <Form
-          id="formContact"
-          name="contact"
-          encType="multipart/form-data"
-          onSubmit={submitHandler}
-        >
+        <Form onSubmit={handleSubmit(onSubmit)}>
           <InputContainer>
             <InputLabel>{t('formName')}:
               <Input
                 type="text"
-                name="nomeCompleto"
-                value={formValues.nomeCompleto}
-                onChange={handleInputChange}
+                {...register('nomeCompleto', { required: true })}
                 placeholder={t('formNamePlaceholder')}
-                required
               />
             </InputLabel>
+            {errors.nomeCompleto && <FieldRequired>{t('fieldRequired')}</FieldRequired>}
           </InputContainer>
           <InputContainer>
             <InputLabel>{t('formPhone')}:
               <Input
                 type="text"
-                name="telefone"
-                value={formValues.telefone}
-                onChange={handleInputChange}
-                maxLength={11}
+                {...register('telefone', {
+                  required: true,
+                  maxLength: 11,
+                })}
                 placeholder={t('formPhonePlaceholder')}
-                required
               />
             </InputLabel>
+            {errors.telefone && <FieldRequired>{t('fieldRequired')}</FieldRequired>}
           </InputContainer>
           <InputContainer>
             <InputLabel>Email:
               <Input
                 type="text"
-                name="email"
-                value={formValues.email}
-                onChange={handleInputChange}
+                {...register('email', { required: true })}
                 placeholder={t('formEmailPlaceholder')}
-                required
               />
             </InputLabel>
+            {errors.email && <FieldRequired>{t('fieldRequired')}</FieldRequired>}
           </InputContainer>
-
-
           <InputContainerFile>
             <InputLabelFile htmlFor="file">
               {t('btnSendDoc')}:
@@ -200,7 +178,7 @@ const Formulario = () => {
               className="file"
               type="file"
               id="file"
-              name="file"
+              {...register('file')}
             />
           </InputContainerFile>
           <Box
@@ -218,5 +196,4 @@ const Formulario = () => {
   );
 };
 
-export default Formulario
-
+export default Formulario;
