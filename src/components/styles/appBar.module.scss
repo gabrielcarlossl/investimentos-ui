@@ -1,0 +1,32 @@
+.AppBar {
+
+  height: 100%;
+  background-color: #01182a !important;
+
+  .logo_container {
+    margin-right: 2px;
+    display: none;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: .3rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    .logo_container {
+      display: flex;
+    }
+  }
+
+  .link_container {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+    .link_container {
+      display: none;
+    }
+  }
+}
