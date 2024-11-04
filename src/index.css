@@ -1,0 +1,42 @@
+:root {
+  --main-dark-light: #022340;
+  --main-darker: #011826;
+  --secondary-light-blue: #45718c;
+  --secondary-dark-blue: #396273;
+  --tertiary-white: #f2f2f0;
+}
+html {
+  font-family: sans-serif, Montserrat;
+  scroll-behavior: smooth;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-dark-light);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-light-blue);
+    opacity:0.2;
+  }
+}
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--main-darker);
+  font-family: Montserrat, sans-serif;
+}
