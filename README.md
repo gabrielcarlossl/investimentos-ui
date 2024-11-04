@@ -25,7 +25,7 @@ What things you need to install the software and how to install them
 
 * React
 * Redux
-* [Weather API](https://openweathermap.org/api) 
+* [GitHub API](https://docs.github.com/en/rest) 
 
 ## Authors
 
