@@ -1,11 +1,11 @@
 import AboutUs from '../components/AboutUs'
-import FindInvestors from '../components/FindInvestors'
+import Investors from '../components/Investors'
 import HowItWorks from '../components/HowItWorks'
 
 const Main = () => {
     return (
         <>
-            <FindInvestors />
+            <Investors />
             <HowItWorks />
             <AboutUs/>
         </>
