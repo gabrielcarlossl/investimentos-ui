@@ -35,15 +35,15 @@ const Section = styled('section')({
 });
 
 const InputLabel = styled('label')({
-  fontSize: '14px',
-  fontWeight: 600,
   color: '#011826',
   display: 'flex',
-  alignItems: 'center',
+  fontSize: '14px',
+  fontWeight: 600,
+  flexDirection: 'column',
   gap: '8px',
   width: '100%',
   '@media (max-width: 899px)': {
-    wordBreak: 'nobreak',
+    wordBreak: 'keep-all',
     whiteSpace: 'nowrap'
   },
 });
@@ -55,7 +55,7 @@ const InputLabelFile = styled('label')({
   alignItems: 'center',
   gap: '8px',
   '@media (max-width: 899px)': {
-    wordBreak: 'nobreak',
+    wordBreak: 'keep-all',
     whiteSpace: 'nowrap'
   },
 });
@@ -70,9 +70,10 @@ const InputContainer = styled('div')({
   }
 });
 const InputContainerFile = styled('div')({
-  padding: '18px 12px',
   display: 'flex',
+  flexDirection: 'column',
   gap: '8px',
+  padding: '18px 12px',
   'input': {
     height: 'fit-content !important',
   },
