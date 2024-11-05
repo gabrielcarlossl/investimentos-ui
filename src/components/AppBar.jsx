@@ -40,7 +40,7 @@ const JoinUsButton = styled(Button)({
     }
 });
 const Logo = styled('img')({
-    maxWidth: '90px',
+    maxWidth: '70px',
     width: '100%'
 });
 const StyledBox = styled(Box)({
