@@ -78,8 +78,6 @@ const LogoNavigate = styled('a')({
     }
 });
 
-
-
 function AppBarMenu() {
 
     // Assets
@@ -203,20 +201,7 @@ function AppBarMenu() {
                         variant="h5"
                         component="a"
                         href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'sans-serif',
-                            alignItems: 'center',
-                            gap: '8px',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                            whiteSpace: 'break-spaces',
-                            justifyContent: 'space-between'
-                        }}
+                        className={styles.menu_container}
                     >
                         <LogoNavigate href='/'>
                             <Logo src={logo} /> Invest
