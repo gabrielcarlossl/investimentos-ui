@@ -15,7 +15,7 @@ const HowItWorks = () => {
 
     const Section = styled('section')({
         overflow: 'clip',
-        scrollMarginTop: isBigScreen ? '-100px' : '-500px',
+        scrollMarginTop: isBigScreen ? '-30px' : '10px',
         alignItems: 'center',
         backgroundImage: 'linear-gradient(180deg, #fff 0, #0111263b 70%)',
         display: 'flex',
@@ -96,14 +96,9 @@ const HowItWorks = () => {
             >
                 {t('howItWorksSubTitle')}
             </h2>
-            <h3
-                data-aos="fade-down"
-                data-aos-duration="1300"
-            >
-
-            </h3>
-
             <Box
+
+            
                 sx={{
                     display: 'flex',
                     flexWrap: 'wrap',
