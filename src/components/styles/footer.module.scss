@@ -1,0 +1,47 @@
+.container {
+  align-items: center;
+  background-image: linear-gradient(180deg, #45718c9d 0, #0111264b 70%);
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+
+  .button_container {
+    display: flex;
+    flex-direction: column;
+    margin-block: 32px;
+  }
+
+  >div>h1 {
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .start_now_navigator {
+    background: #011826;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    text-decoration: none;
+  }
+
+  .start_now_navigator:hover {
+    background: #45788c;
+    color: #fff;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin: 32px 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: 900px) {
+    .copyright {
+      padding: 0;
+    }
+  }
+}

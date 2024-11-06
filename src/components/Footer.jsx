@@ -1,74 +1,47 @@
-import { styled } from '@mui/system'
-import { useMediaQuery } from 'react-responsive'
+// Components
 import { StartSectionVerticalLineLight } from './VerticalLines'
-import { Box, Button, Typography } from '@mui/material'
+import {
+    Button,
+    Box,
+    Typography
+} from '@mui/material'
+
+// Styles
+import styles from './styles/footer.module.scss'
+
+// Utils
 import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
-    const isBigScreen = useMediaQuery({ query: '(min-width: 900px)' })
-
-    const Section = styled('section')({
-        overflow: 'clip',
-        alignItems: 'center',
-        // background: '#45718c9d',
-        backgroundImage: 'linear-gradient(180deg, #45718c9d 0, #0111264b 70%)',
-        display: 'flex',
-        flexDirection: 'column',
-        '> div > h1': {
-            textAlign: 'center',
-            fontWeight: 500,
-            textTransform: 'uppercase',
-
-        }
-    })
-
-    const StartNowNavigator = styled(Button)({
-        color: ' #fff',
-        background: '#011826',
-        borderRadius: '32px',
-        fontsize: '16px',
-        fontWeight: 700,
-        '&:hover': {
-            color: '#fff',
-            background: '#45788C'
-        },
-        padding: '10px 24px'
-    });
-
     const currentDate = new Date()
     const currentYear = currentDate.getFullYear()
-
     const { t } = useTranslation()
 
     return (
-        <Section>
+        <section className={styles.container}>
             <StartSectionVerticalLineLight />
             <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    marginY: '42px',
-
-                }}
+                className={styles.button_container}
+                data-aos="fade-down"
+                data-aos-duration="900"
             >
                 <h1>{t('joinUs')}</h1>
-                <StartNowNavigator href='/formulario' >{t('startNow')}</StartNowNavigator>
-            </Box>
-            <Box>
-                <Typography
-                    sx={{
-                        fontSize: '12px',
-                        marginY: '32px',
-                        padding: isBigScreen ? 0 : '20px',
-                        textAlign: 'center'
-                    }}
+                <Button
+                    className={styles.start_now_navigator}
+                    href='/formulario'
                 >
-                    {t('copyright', {
-                        currentYear
-                    })}
+                    {t('startNow')}
+                </Button>
+            </Box>
+            <Box
+                data-aos="fade-up"
+                data-aos-duration="900"
+            >
+                <Typography className={styles.copyright}>
+                    {t('copyright', { currentYear })}
                 </Typography>
             </Box>
-        </Section>
+        </section>
     )
 }
 
