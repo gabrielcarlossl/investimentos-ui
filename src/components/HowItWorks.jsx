@@ -1,49 +1,19 @@
-import { useMediaQuery } from 'react-responsive';
+// Components
 import { EndSectionVerticalLine, StartSectionVerticalLine } from './VerticalLines'
-
-import { styled } from '@mui/system';
 import Card from './Card';
 import { Box } from '@mui/material';
+
+// Styles
+import styles from './styles/howItWorks.module.scss'
+
+// Utils
 import { useTranslation } from 'react-i18next';
 
 const HowItWorks = () => {
-    const isBigScreen = useMediaQuery({ query: '(min-width: 900px)' })
 
     const formImage = new URL('../../public/assets/form-illustration.png', import.meta.url).href
     const profileImage = new URL('../../public/assets/profile-image.svg', import.meta.url).href
     const mentorImage = new URL('../../public/assets/mentor-image.png', import.meta.url).href
-
-    const Section = styled('section')({
-        overflow: 'clip',
-        scrollMarginTop: isBigScreen ? '-30px' : '10px',
-        alignItems: 'center',
-        backgroundImage: 'linear-gradient(180deg, #fff 0, #0111263b 70%)',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        '> h1': {
-            color: '#011826',
-            fontWeight: 600,
-            margin: isBigScreen ? '70px 16px 30px 16px' : '34px 16px 0px 16px',
-            textAlign: 'center',
-            textTransform: 'uppercase',
-
-        },
-        '> h2': {
-            fontWeight: 500,
-            marginBottom: isBigScreen ? '50px' : '0px',
-            textAlign: isBigScreen ? '' : 'center',
-            padding: isBigScreen ? 0 : '20px',
-            fontSize: '20px'
-        },
-        '> h3': {
-            color: '#011826',
-            fontWeight: 500,
-            marginBottom: isBigScreen ? '82px' : '32px',
-            textAlign: isBigScreen ? '' : 'center',
-            padding: isBigScreen ? 0 : '20px',
-        }
-    });
 
     const { t } = useTranslation()
 
@@ -82,7 +52,7 @@ const HowItWorks = () => {
         }
     ]
     return (
-        <Section id='como-funciona'>
+        <section className={styles.container} id='como-funciona'>
             <StartSectionVerticalLine />
             <h1
                 data-aos="fade-down"
@@ -96,17 +66,7 @@ const HowItWorks = () => {
             >
                 {t('howItWorksSubTitle')}
             </h2>
-            <Box
-
-            
-                sx={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    gap: isBigScreen ? '16px' : '72px',
-                    justifyContent: isBigScreen ? '' : 'center',
-                    marginBottom: '120px'
-                }}
-            >
+            <Box className={styles.card_container}>
                 {
                     cardData?.map((info, index) => <div data-aos={info.aos} data-aos-duration={info.duration} key={index}>
                         <Card
@@ -121,7 +81,7 @@ const HowItWorks = () => {
                 }
             </Box>
             <EndSectionVerticalLine />
-        </Section>
+        </section>
     )
 }
 
