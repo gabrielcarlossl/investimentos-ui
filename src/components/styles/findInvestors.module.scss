@@ -15,10 +15,7 @@
     text-transform: uppercase;
     font-weight: 600;
 
-    @media (max-width: 900px) {
 
-      font-size: 18px;
-    }
   }
 
   h2 {
@@ -29,13 +26,49 @@
     font-size: 20px;
     font-weight: 600;
 
-    @media (max-width: 900px) {
-      font-size: 14px;
-    }
+  }
+
+  .image_text_container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
   }
 
   .investment_image {
     max-width: 600px;
     width: 100%;
+  }
+
+  .invest_text {
+    background-color: #fff;
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    max-width: 400px;
+    margin-bottom: 0px;
+    padding: 30px;
+  }
+
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    .image_text_container {
+      gap: 0px;
+    }
+
+    .invest_text {
+      font-size: 16px;
+      max-width: 320px;
+      margin-bottom: 24px;
+    }
   }
 }
