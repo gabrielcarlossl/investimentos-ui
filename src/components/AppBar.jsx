@@ -29,16 +29,6 @@ import styles from './styles/appBar.module.scss'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const JoinUsButton = styled(Button)({
-    color: ' #011826',
-    background: '#F2F2EB',
-    fontsize: '16px',
-    fontWeight: 700,
-    '&:hover': {
-        color: '#fff',
-        background: '#45788C'
-    }
-});
 const Logo = styled('img')({
     maxWidth: '70px',
     width: '100%'
@@ -142,12 +132,11 @@ function AppBarMenu() {
         }
     }, [location]);
 
-
-
     return (
         <AppBar
             className={styles.AppBar}
-            position="sticky">
+            position="sticky"
+        >
             <Container sx={{ height: '100px' }} maxWidth="xl">
                 <Toolbar sx={{ height: '100%' }} disableGutters>
                     <Box
@@ -158,9 +147,7 @@ function AppBarMenu() {
                         <LogoNavigate href='/'>
                             <Logo src={logo} />
                         </LogoNavigate>
-
                     </Box>
-
                     <Box
                         className={styles.link_container}>
                         <IconButton
@@ -245,7 +232,7 @@ function AppBarMenu() {
                                 </ButtonNavigate>
                             )
                         })}
-                        <JoinUsButton href='/formulario'>{t('btnJoinUs')}</JoinUsButton>
+                        <Button className={styles.joinUsButton} href='/formulario'>{t('btnJoinUs')}</Button>
                         <Tooltip title={currentLanguage === 'en' ? 'Change Language' : 'Mudar idoma'}>
                             <Box
                                 sx={{

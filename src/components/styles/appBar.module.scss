@@ -29,7 +29,8 @@
       display: none;
     }
   }
-  .menu_container{
+
+  .menu_container {
     margin-right: 8px;
     display: flex;
     flex-grow: 1;
@@ -46,8 +47,21 @@
 
   @media (min-width: 768px) {
     .menu_container {
-        display: none;
+      display: none;
     }
-}
-}
+  }
 
+  .joinUsButton {
+    color: #011826;
+    background-color: #F2F2EB;
+    font-size: 16px;
+    font-weight: 700;
+    padding-inline: 14px;
+  }
+
+  .joinUsButton:hover {
+    color: #fff;
+    background-color: #45788C;
+  }
+
+}
