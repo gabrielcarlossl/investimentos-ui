@@ -39,7 +39,6 @@ const ProfileCard = () => {
         <Button type="submit">{t('analyzeStartBtn')}</Button>
       </form>
       {errors.username && <p>{errors.username.message}</p>}
-
     </div>
   )
 }
