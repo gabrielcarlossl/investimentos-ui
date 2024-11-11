@@ -22,7 +22,7 @@ const LoadingAnalysis = () => {
     >
       <div>
         <h1>{t('loadingText')}</h1>
-        <CircularProgress color='secondary' />
+        <CircularProgress />
       </div>
       <EndSectionVerticalLine />
     </Box>
