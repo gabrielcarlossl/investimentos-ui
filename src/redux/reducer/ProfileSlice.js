@@ -8,7 +8,9 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   item: {},
   isLoading: false,
-  error: null
+  isError: false,
+  errorMessage: null,
+  payload: null
 }
 
 // No Slice que é o ProfileReducer ele possui as ações e controla a troca de estado de acordo com a ação que é chamada.
@@ -16,19 +18,26 @@ const ProfileReducer = createSlice({
   name: 'profile',
   initialState,
   reducers: {
-    getSingleProfileRequest(state) {
+    getSingleProfileRequest(state, action) {
       state.status = 'GET_SINGLE_PROFILE_REQUEST'
       state.isLoading = true
+      state.isError = false
+      state.payload = action.payload      
     },
     getSingleProfileSuccess(state,  action) {
       state.status = 'GET_SINGLE_PROFILE_SUCCESS'
       state.isLoading = false
+      state.isError = false
       state.item = action.payload
     },
     getSingleProfileFailure(state, action) {
       state.status = 'GET_SINGLE_PROFILE_FAILURE'
       state.isLoading = false
-      state.error = action.payload
+      state.isError = true
+      state.errorMessage = action.payload
+    },
+    resetStore() {
+      return initialState
     }
   }
 })
@@ -38,6 +47,7 @@ export const {
   getSingleProfileRequest,
   getSingleProfileSuccess,
   getSingleProfileFailure,
+  resetStore
 
 } = ProfileReducer.actions
 
