@@ -19,9 +19,9 @@
     "stepThree": "Passo 3",
     "stepTwoSubTitle": "Análise do seu perfil",
     "stepThreeSubTitle": "Mentoria e dicas personalizadas",
-    "stepOneText": "Preencha nosso formulário para conhecermos melhor seu perfil, em seguida,  envie seus dados.",
-    "stepTwoText": "Após o preenchimento do formulário, nossa equipe de consultoria irá analisar as informações fornecidas para identificar seu perfil de investidor. Com base nas suas necessidades e objetivos, criaremos um plano adequado para orientar suas decisões de investimento.",
-    "stepThreeText": "Com o perfil analisado, você receberá mentoria especializada e dicas de investimento alinhadas às suas metas. Nossa consultoria fornecerá o suporte e as orientações necessárias para ajudar você a investir com mais segurança e atingir o crescimento desejado.",
+    "stepOneText": "Envie seu nome de usuário do GitHub para que possamos conhecer melhor seu perfil de investidor. Faremos uma análise, e, se for positiva, você poderá preencher nosso formulário para realizar o cadastro.",
+    "stepTwoText": "Após o análise do perfil investidor, você preencherá um formulário para realizar o cadastro na nossa mentoria. Nossa equipe de consultoria irá analisar as informações fornecidase e com base nas suas necessidades e objetivos de investimentos, criaremos um plano adequado para orientar suas decisões de investimento.",
+    "stepThreeText": "Aqui, você já faz parte da mentoria e receberá materiais, treinamentos e dicas de investimento alinhadas às suas metas. Nossa consultoria oferecerá todo o suporte e orientação necessários para ajudá-lo a investir com mais segurança e alcançar o crescimento desejado.",
     "joinUs": "Junte-se agora",
     "startNow": "Comece agora!",
     "copyright": "Copyright © {{currentYear}} - Todas as marcas registradas e direitos autorais pertencem aos seus respectivos proprietários.",
@@ -39,6 +39,9 @@
     "formSentSubTitle": "Obrigado pelo seu interesse.",
     "formSentText": "Nós recebemos  seu formulário e entreremos em contato em breve.",
     "formImageAlt": "Image of a successfully sent email",
-    "fieldRequired": "* Campo obrigatório"
+    "fieldRequired": "* Campo obrigatório",
+    "notfoundPageImageAlt": "Imagem de um computador com uma lupa que representa que a pagina não foi encontrada.",
+    "notFoundPage_start": "A página",
+    "notFoundPage_end": "não existe."
   }
 }

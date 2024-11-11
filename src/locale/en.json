@@ -15,9 +15,9 @@
     "stepThree": "Step 3",
     "stepTwoSubTitle": "Profile Analysis",
     "stepThreeSubTitle": "Personalized Mentorship and Investment Tips",
-    "stepOneText": "Fill out our form so that we can better understand your company, and then send the pitch or presentation material. If you don't have a pitch or material to present to investors, don't worry, we have prepared material for you. Just fill out the form.",
+    "stepOneText": "Please provide your GitHub username so we can better understand your investor profile. We will conduct an analysis, and if it's positive, you will be able to fill out our form to complete the registration.",
     "stepTwoText": "After completing the form, our consulting team will review the information provided to identify your investor profile. Based on your needs and goals, we’ll create a suitable plan to guide your investment decisions.",
-    "stepThreeText": "With your profile analyzed, you’ll receive specialized mentorship and investment tips aligned with your objectives. Our consulting service will provide the support and guidance you need to invest with confidence and achieve the growth you desire.",
+    "stepThreeText": "Here, you are already part of the mentorship program and will receive materials, training, and investment tips aligned with your goals. Our consulting team will provide all the support and guidance needed to help you invest with greater confidence and achieve the growth you desire.",
     "howItWorksSubTitle": "See the simple steps to start your investment journey with expert guidance.",
     "howItWorksImageAlt": "Image of a man writing.",
     "howItWorksImageAltTwo": "Profile analysis image.",
@@ -38,6 +38,9 @@
     "formSentMessage": "Form sent!",
     "formSentSubTitle": "Thank you for your interest.",
     "formSentText": "We have received your form and will get in touch soon.",
-    "fieldRequired": "* Field required"
+    "fieldRequired": "* Field required",
+    "notfoundPageImageAlt": "Image of a computer with a magnifying glass representing that the page was not found.",
+    "notFoundPage_start": "The",
+    "notFoundPage_end": "page does not exist."
   }
 }
