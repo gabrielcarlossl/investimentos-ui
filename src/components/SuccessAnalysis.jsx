@@ -21,11 +21,19 @@ const SuccessAnalysis = () => {
     <div className={styles.container}>
       <Box className={styles.success_analysis_container}>
         <div className={styles.data_wrapper}>
-          <div className={styles.concludedAnalysis_container}>
+          <div
+            data-aos="fade-down"
+            data-aos-duration="900"
+            className={styles.concludedAnalysis_container}
+          >
             <h1>{t('concludedAnalysis')}</h1>
             <h2>{t('successAnalysisSubTitle')}</h2>
           </div>
-          <div className={styles.profileData_container}>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            className={styles.profileData_container}
+          >
             <div className={styles.avatar_container}>
               <Avatar src={item.avatar_url} sx={{ height: '100px', width: '100px' }} alt={t('profileAvatarAlt') + item?.name} />
             </div>

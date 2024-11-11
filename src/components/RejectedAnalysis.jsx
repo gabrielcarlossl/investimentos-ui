@@ -19,13 +19,17 @@ const RejectedAnalysis = () => {
   const dispatch = useDispatch()
   const { t } = useTranslation()
   return (
-    <div className={styles.container}>
-        <h1>{t('concludedAnalysis')}</h1>
-        <h2>{t('rejectedAnalysisText')}</h2>
-        <img src={failureAnalysisImage} alt={t('rejectedImageAlt')} />
-        <Button onClick={() => dispatch(resetStore())}>{t('repeatButton')}</Button>
-        <EndSectionVerticalLine/>
-      </div>
+    <div
+      data-aos="fade-down"
+      data-aos-duration="900"
+      className={styles.container}
+    >
+      <h1>{t('concludedAnalysis')}</h1>
+      <h2>{t('rejectedAnalysisText')}</h2>
+      <img src={failureAnalysisImage} alt={t('rejectedImageAlt')} />
+      <Button onClick={() => dispatch(resetStore())}>{t('repeatButton')}</Button>
+      <EndSectionVerticalLine />
+    </div>
   )
 }
 
