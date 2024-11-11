@@ -1,0 +1,137 @@
+.container {
+  align-items: center;
+  background-image: linear-gradient(180deg, #fff 0, #0111263b 70%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-inline: 16px;
+  justify-content: center;
+
+  .success_analysis_container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .data_wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 40px;
+  }
+
+  .concludedAnalysis_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  .profileData_container {
+    border-radius: 24px;
+    border: 1px solid #01182A;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: fit-content;
+    max-width: 200px;
+    padding: 32px 16px;
+    width: 100%;
+
+    .avatar_container {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .single_data_container_row {
+      display: flex;
+      flex-direction: row !important;
+      gap: 4px;
+    }
+
+    .single_data_container,
+    .single_data_container_row {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      label {
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0px;
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  button {
+    background-color: #01182A;
+    border-radius: 16px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    margin-block: 20px;
+    text-transform: none;
+    padding-inline: 24px;
+  }
+
+  button:hover {
+    background: #45788c;
+    color: #fff;
+  }
+
+  button:hover {
+    background: #45788c;
+    color: #fff;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+
+    .success_analysis_container {
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .data_wrapper {
+      flex-direction: column;
+      padding: 0px;
+    }
+
+    h1 {
+      font-size: 14px;
+    }
+
+    .concludedAnalysis_container {
+      img {
+        display: none;
+      }
+    }
+
+  }
+
+}

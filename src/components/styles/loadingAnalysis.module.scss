@@ -1,0 +1,21 @@
+.loading_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 432px);
+  padding-top: 40px;
+  padding-inline: 16px;
+  h1 {
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  div:first-of-type {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
