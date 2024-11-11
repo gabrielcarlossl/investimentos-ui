@@ -21,8 +21,8 @@ const Form = () => {
 
   return (
     <section className={styles.container}>
-      <h1>{t('urlJoinUs')}</h1>
-      <h2>{t('formDescription')}</h2>
+      
+      <h3>{t('formDescription')}</h3>
       <div className={styles.formContainer}>
         <form
           className={styles.formWrapper}
@@ -32,12 +32,12 @@ const Form = () => {
             <label className={styles.inputLabel}>{t('formName')}:
               <Input
                 type="text"
-                {...register('nomeCompleto', { required: true })}
+                {...register('fullName', { required: true })}
                 placeholder={t('formNamePlaceholder')}
               />
             </label>
             {
-              errors.nomeCompleto &&
+              errors.fullName &&
               <span className={styles.fieldRequired}>
                 {t('fieldRequired')}
               </span>
@@ -47,7 +47,7 @@ const Form = () => {
             <label className={styles.inputLabel}>{t('formPhone')}:
               <Input
                 type="text"
-                {...register('telefone', {
+                {...register('phone', {
                   required: true,
                   maxLength: 11,
                 })}
@@ -56,7 +56,7 @@ const Form = () => {
               />
             </label>
             {
-              errors.telefone &&
+              errors.phone &&
               <span className={styles.fieldRequired}>
                 {t('fieldRequired')}
               </span>
