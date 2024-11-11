@@ -41,6 +41,7 @@
     "fieldRequired": "* Field required",
     "notfoundPageImageAlt": "Image of a computer with a magnifying glass representing that the page was not found.",
     "notFoundPage_start": "The",
-    "notFoundPage_end": "page does not exist."
+    "notFoundPage_end": "page does not exist.",
+    "loadingText":"Analyzing Investor Profile, please wait..."
   }
 }

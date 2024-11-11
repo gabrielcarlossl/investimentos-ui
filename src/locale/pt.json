@@ -42,6 +42,7 @@
     "fieldRequired": "* Campo obrigatório",
     "notfoundPageImageAlt": "Imagem de um computador com uma lupa que representa que a pagina não foi encontrada.",
     "notFoundPage_start": "A página",
-    "notFoundPage_end": "não existe."
+    "notFoundPage_end": "não existe.",
+    "loadingText": "Analisando Perfil investidor, por favor aguarde ..."
   }
 }
