@@ -1,0 +1,36 @@
+.container {
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+
+    button {
+      background-color: #01182A;
+      border-radius: 16px;
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      text-transform: none;
+    }
+
+    button:hover {
+      background: #45788c;
+      color: #fff;
+    }
+  }
+
+  p {
+    color: #ff8d8d;
+    font-size: 12px;
+    margin: 0;
+  }
+}
