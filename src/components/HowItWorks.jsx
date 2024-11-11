@@ -20,24 +20,24 @@ const HowItWorks = () => {
     const cardData = [
         {
             title: t('stepOne'),
-            subTitle: t('urlJoinUs'),
-            text: t('stepOneText'),
-            bgColor: '#20629c90',
-            aos: 'fade-up',
-            duration: '900',
-            imgUrl: formImage,
-            imageDescription: t('howItWorksImageAlt')
-            
-        },
-        {
-            title: t('stepTwo'),
             subTitle: t('stepTwoSubTitle'),
-            text: t('stepTwoText'),
+            text: t('stepOneText'),
             bgColor: '#39627368',
             aos: 'fade-down',
             duration: '1100',
             imgUrl:  profileImage,
             imageDescription: t('howItWorksImageAltTwo')
+            
+        },
+        {
+            title: t('stepTwo'),
+            subTitle: t('urlJoinUs'),
+            text: t('stepTwoText'),
+            bgColor: '#20629c90',
+            aos: 'fade-up',
+            duration: '900',
+            imgUrl: formImage,
+            imageDescription: t('howItWorksImageAlt')
             
         },
         {
