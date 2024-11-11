@@ -42,6 +42,22 @@
     "notfoundPageImageAlt": "Image of a computer with a magnifying glass representing that the page was not found.",
     "notFoundPage_start": "The",
     "notFoundPage_end": "page does not exist.",
-    "loadingText":"Analyzing Investor Profile, please wait..."
+    "loadingText":"Analyzing Investor Profile, please wait...",
+    "concludedAnalysis": "Analysis Completed",
+    "rejectedAnalysisText": "Poor investor profile; unfortunately, we cannot proceed.",
+    "repeatButton": "Redo analysis",
+    "profileAnalysisImageAlt": "Illustration of an investor profile represented by a male figure on a card with information, surrounded by icons of charts and a magnifying glass, symbolizing detailed analysis of financial data and user profile.",
+    "analyzeYourProfile": "Analyze your investor profile:",
+    "analyzeStartBtn": "Analyze",
+    "profileAvatarAlt": "GitHub profile picture of ",
+    "usernameInputRequired": "* GitHub username is required.",
+    "rejectedImageAlt": "Person sitting with head in hands, next to a downward trend arrow and declining financial chart.",
+    "successAnalysisSubTitle": "Great investor profile, proceed to registration:",
+    "successAnalysisData_name": "Name",
+    "successAnalysisData_followers": "Followers",
+    "successAnalysisData_following": "Following",
+    "successAnalysisData_company": "Company",
+    "successAnalysisData_location": "Location",
+    "successAnalysisData_public_repositories": "Public Repositories"
   }
 }

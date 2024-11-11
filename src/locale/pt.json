@@ -43,6 +43,22 @@
     "notfoundPageImageAlt": "Imagem de um computador com uma lupa que representa que a pagina não foi encontrada.",
     "notFoundPage_start": "A página",
     "notFoundPage_end": "não existe.",
-    "loadingText": "Analisando Perfil investidor, por favor aguarde ..."
+    "loadingText": "Analisando Perfil investidor, por favor aguarde ...",
+    "concludedAnalysis": "Análise Concluída",
+    "rejectedAnalysisText": "Péssimo perfil investidor, infelizmente não poderemos continuar.",
+    "repeatButton": "Refazer análise",
+    "profileAnalysisImageAlt": "Ilustração de um perfil de investidor representado por uma figura masculina em um cartão com informações, cercado por ícones de gráficos e uma lupa, simbolizando análise detalhada de dados financeiros e perfil de usuário.",
+    "analyzeYourProfile": "Analise seu perfil investidor:",
+    "analyzeStartBtn": "Analisar",
+    "profileAvatarAlt": "Foto de perfil do GitHub de ",
+    "usernameInputRequired": "* Obrigatório enviar um username do GitHub.",
+    "rejectedImageAlt": "Pessoa sentada com a cabeça nas mãos, ao lado de uma seta de tendência de queda e um gráfico financeiro em declínio.",
+    "successAnalysisSubTitle": "Ótimo perfil investidor, prosseguir para cadastro:",
+    "successAnalysisData_name": "Nome",
+    "successAnalysisData_followers": "Seguidores",
+    "successAnalysisData_following": "Seguindo",
+    "successAnalysisData_company": "Empresa",
+    "successAnalysisData_location": "Localidade",
+    "successAnalysisData_public_repositories": "Repositórios Públicos"
   }
 }
