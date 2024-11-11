@@ -10,6 +10,7 @@ import styles from './styles/rejectedAnalysis.module.scss'
 
 // Translation
 import { useTranslation } from 'react-i18next'
+import { EndSectionVerticalLine } from './VerticalLines'
 
 
 const RejectedAnalysis = () => {
@@ -21,8 +22,9 @@ const RejectedAnalysis = () => {
     <div className={styles.container}>
         <h1>{t('concludedAnalysis')}</h1>
         <h2>{t('rejectedAnalysisText')}</h2>
-        <img src={failureAnalysisImage} width={300} />
+        <img src={failureAnalysisImage} alt={t('rejectedImageAlt')} />
         <Button onClick={() => dispatch(resetStore())}>{t('repeatButton')}</Button>
+        <EndSectionVerticalLine/>
       </div>
   )
 }
