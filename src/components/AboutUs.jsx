@@ -1,13 +1,13 @@
 
 // Components
 import { EndSectionVerticalLine, StartSectionVerticalLine } from './VerticalLines'
-import { Box } from '@mui/material';
+import { Box } from '@mui/material'
 
 // Styles
 import styles from './styles/aboutUs.module.scss'
 
 // Translation
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 const AboutUs = () => {
     const { t } = useTranslation()

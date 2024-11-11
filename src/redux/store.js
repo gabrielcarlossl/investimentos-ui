@@ -6,5 +6,5 @@ import ProfileReducer from './reducer/ProfileSlice'
 export const store = configureStore({
   reducer: {
     ProfileReducer
-  },
+  }
 })
