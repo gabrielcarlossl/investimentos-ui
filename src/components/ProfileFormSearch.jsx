@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next'
 // React Hook Form
 import { useForm } from 'react-hook-form'
 
-const ProfileCard = () => {
+const ProfileFormSearch = () => {
 
   const dispatch = useDispatch()
   const { t } = useTranslation()
@@ -43,4 +43,4 @@ const ProfileCard = () => {
   )
 }
 
-export default ProfileCard
+export default ProfileFormSearch
