@@ -24,8 +24,12 @@ What things you need to install the software and how to install them
 
 ## Built With
 
-* React
-* Redux
+* ReactJS
+* React Hook Form
+* Redux Toolkit
+* Axios
+* I18 Translation 
+* Material UI
 * [GitHub API](https://docs.github.com/en/rest) 
 
 ## Authors
