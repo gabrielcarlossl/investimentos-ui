@@ -1,6 +1,7 @@
 # Investimentos UI
 
-Investments is a website that promotes and gives tips on  financial investments.
+Investments-UI is a fake website that promotes and gives tips on  financial investments.
+On the form screen, click the "Junte-se" PT translation button or "Introduce yourself" EN translation, in the header, then type your username in the input. It will make a GET request to the GitHub API at the /user endpoint. If you enter anything other than an existing username, it will say that you don't have an investor profile. Otherwise, it will say you have a good investor profile.
 
 ## Getting Started
 
